@@ -1,0 +1,27 @@
+1. Tanda “ ” pada nilai variabel biasanya menandakan sebuah string, tetapi pada
+saat dilakukan operasi penjumlahan ternyata menghasilkan nilai jumlah
+seperti pada umumnya penjumlahan aritmatika, mengapa bisa terjadi?
+(variable dan tipe data)
+Jawab:
+Hal ini terjadi karena PHP adalah weakly typed language, artinya PHP akan otomatis mengonversi tipe data sesuai konteks operasi.
+Jika string hanya berisi angka, maka PHP akan menganggapnya sebagai integer atau float saat dilakukan operasi aritmatika.
+Contoh:
+$a = "10";
+$b = "20";
+echo $a + $b; // hasilnya 30 (bukan "1020")
+
+Jadi, meskipun nilainya ditulis dalam tanda kutip (string), PHP melakukan type juggling dan mengubahnya menjadi tipe numerik saat dibutuhkan dalam operasi aritmatika.
+
+2. Apa yang membedakan pembagian dengan operator / dan operator modulo
+% ? (variable dan tipe data)
+Jawab:
+Operator / → digunakan untuk pembagian dan hasilnya bisa berupa bilangan desimal (float).
+Contoh:
+echo 10 / 4; // hasilnya 2.5
+
+Operator % → digunakan untuk sisa hasil bagi (modulus) dan hasilnya selalu berupa bilangan bulat (integer).
+Contoh:
+echo 10 % 4; // hasilnya 2
+
+3. Tambahkan kode program operator agar bisa menghasilkan nilai gabungan string tugas1 dan tugas2 menjadi 9080? (operator)
+Jawab:
